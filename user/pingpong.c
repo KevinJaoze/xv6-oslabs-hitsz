@@ -7,8 +7,8 @@ int main(int argc, char* argv[]) {
  pipe(p2c);
  pipe(c2p);
 
- int cpid = fork();
- if (cpid == 0){ //child
+ int cpid;
+ if ((cpid = fork()) == 0){ //child
    close(p2c[1]);
    close(c2p[0]);
    
