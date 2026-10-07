@@ -23,3 +23,15 @@ submissions/
 compile_commands.json
 .gdb_history
 .cache/
+
+# whitelist
+/*
+!/.gitignore
+!/README.md
+!/command.gdb
+# only allow 3 programs
+!/user/
+/user/*
+!/user/sleep.c
+!/user/pingpong.c
+!/user/find.c
